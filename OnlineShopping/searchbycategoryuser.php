@@ -25,14 +25,14 @@ $resultcat= $db1->query($cats);
 	<div class="row cat">
 	  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 border">
 			<ul class="list-group">
-                <li style="list-style: none;" class="list-group-item active">
+                <li style="list-style: disc;" class="list-group-item active">
                 <b><a href="searchbycategoryuser.php"  style="text-decoration:none;color:white;">All Categories</a></b>
                 </li>
                 <?php foreach($resultcat as $row) {?>
                
                 	
                			 <li style="list-style: none;" class="list-group-item">
-                            <a href="searchbycategoryuser.php?cat=<?php echo $row['Category_ID'] ?>"  style="text-decoration:none;">
+                            <a href="searchbycategoryuser.php?cat=<?php echo $row['Category_ID'] ?>"  style="text-decoration: underline;">
                             	<?php echo $row['Category_Name'] ?>
                				 </a>
                			 </li>
